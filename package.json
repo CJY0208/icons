@@ -1,0 +1,50 @@
+{
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "init": "npx pnpm@6 i",
+    "build": "npm run clean:build && father-build",
+    "clean:build": "rimraf ./packages/*/lib ./packages/*/es",
+    "icon": "node ./scripts/createIcon.js",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "publish": "lerna publish from-package -m \"chore: publish\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-router-dom": ">=5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@types/react": "^16.12.0",
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.0.9",
+    "@umijs/utils": "^3.5.20",
+    "babel-plugin-import": "^1.13.3",
+    "father-build": "^1.17.2",
+    "lerna": "^4.0.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "yorkie": "^2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended"
+  },
+  "resolutions": {
+    "@types/react": "^16.14.2"
+  },
+  "homepage": "https://github.com/CJY0208/icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CJY0208/icons.git"
+  },
+  "author": "fexd",
+  "license": "ISC"
+}

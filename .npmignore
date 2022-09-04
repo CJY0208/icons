@@ -1,0 +1,12 @@
+node_modules
+scripts
+src
+.editorconfig
+.fatherrc.ts
+.gitignore
+.npmignore
+.prettierignore
+.prettierrc
+CONTRIBUTING.md
+tsconfig.json
+yarn.lock
