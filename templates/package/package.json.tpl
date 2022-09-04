@@ -22,6 +22,8 @@
     "type": "git",
     "url": "https://github.com/CJY0208/icons.git"
   },
-  "author": "fexd",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "ISC"
 }
